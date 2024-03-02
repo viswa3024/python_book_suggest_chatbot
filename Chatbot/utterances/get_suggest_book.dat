@@ -1,0 +1,72 @@
+sugget book by $author $language $genre
+open suggest book
+get my suggest book
+suggest book based on $language $author $genre
+Recomend  book based on $language $author $genre
+suggest book based on $author $language $genre
+$author
+$language
+$genre
+$language $author
+$author $language
+$author $genre
+$genre $author
+$genre $author $language
+$language $author $genre
+Recommend a classic English novel.
+What's a famous dystopian novel
+Suggest a popular Spanish magic realism book.
+Any good fantasy books in English
+Recommend a Portuguese fiction book.
+Tell me a famous English romance novel.
+Suggest a modernist English novel.
+Any satirical novels in English
+Recommend a thrilling English detective novel.
+Tell me a famous English horror novel.
+Any historical fiction novels in English
+Tell me an adventurous English novel.
+Recommend a horror novel in English.
+Suggest a Greek epic poetry.
+Any classic English novels you'd recommend
+Tell me a Russian philosophical novel.
+Recommend a classic French adventure novel.
+Any Russian realist novels you'd recommend
+Tell me a romantic English novel.
+Suggest a Russian psychological fiction book.
+Recommend a detective novel in English.
+Any French existentialist novels you'd recommend
+Tell me a classic English fantasy series.
+Recommend a novella in English.
+Suggest a French adventure novel.
+Any well-known Greek epic poetry
+Tell me a German surrealist novel.
+Recommend an English science fiction novel.
+Suggest a classic English horror novel.
+Any English young adult novels you'd recommend
+Recommend a classic English fantasy series.
+Recommend a classic English children's literature.
+Suggest a French children's literature book.
+Tell me a Dutch biography.
+Give Recommend a classic English children's literature.
+Suggest a humorous English science fiction novel.
+Any English psychological thriller novels you'd recommend
+Recommend a Chinese military classic.
+Tell me a Swedish thriller novel.
+Suggest a classic English fantasy novel.
+Any English dystopian novels you'd recommend
+Tell me a famous English science fiction novel.
+Recommend a recent English science fiction novel.
+Suggest a classic English post-apocalyptic novel.
+Any well-known English young adult novels you'd recommend
+Give me a famous English historical fiction novel.
+Recommend a thrilling English novel.
+Suggest a historical fiction novel in English.
+Tell me a popular English young adult novel.
+Recommend a classic English thriller novel.
+Any famous English fiction novels you'd recommend
+Suggest a recent English fiction novel.
+Give  a famous English historical fiction novel.
+Recommend a psychological English novel.
+Suggest a classic English cookbook.
+Tell me a classic English writing guide.
+Recommend a recent English spirituality book.
