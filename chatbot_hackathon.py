@@ -127,6 +127,9 @@ Teams will be creating a conversational chatbot for the intents allocated to the
 !unzip -qq Chatbot_Hackathon.zip
 print("Data downloaded successfully")
 
+# upload data and unzip
+!unzip -qq soultion.zip
+
 # Import Libraries
 import json
 import random
@@ -285,8 +288,6 @@ path_param = 'Chatbot/params/params.cfg'
 path_utterances = 'Chatbot/utterances/'
 path_slots = 'Chatbot/slots/'
 
-
-
 """### Task2 (2Marks)
 
 Create a database with all possible combinations of all attributes (can be a CSV ﬁle) along with possible outcome for each combination for your intent. Provide at least 10 combinations. (Hint: You can use the same database which was created for Alexa chatbot)
@@ -347,9 +348,9 @@ def load_utterances_from_files(folder_path):
 
 utterances, labels = load_utterances_from_files('Chatbot/utterances/')
 
-labels
+#labels
 
-utterances
+#utterances
 
 X_train, X_test, y_train, y_test = train_test_split(utterances, labels, test_size=0.2, random_state=42)
 
@@ -390,7 +391,7 @@ print(f"Accuracy: {accuracy}")
 
 from sklearn.tree import DecisionTreeClassifier
 
-dtree = DecisionTreeClassifier(max_depth=3,criterion='entropy')  # You can adjust other parameters as needed
+dtree = DecisionTreeClassifier(max_depth=4,criterion='entropy')  # You can adjust other parameters as needed
 dtree.fit(X_train_vectorized, y_train)
 
 y_pred = dtree.predict(X_test_vectorized)
@@ -450,6 +451,23 @@ print(f"Accuracy: {accuracy}")
 
 # YOUR CODE HERE to extract the features
 
+#X_train_vectorized
+#X_test_vectorized
+
+print("\nFeatures:")
+print(X_train_vectorized)
+
+
+# Convert the sparse matrix to a dense array for better visibility
+dense_features = X_train_vectorized.toarray()
+print("\nDense Features:")
+print(dense_features)
+
+# Get the feature names (words) corresponding to the columns
+feature_names = vectorizer.get_feature_names_out()
+print("\nFeature Names:")
+print(feature_names)
+
 """**Classification:**
 
 * Identify the features and labels
@@ -472,7 +490,8 @@ print(f"Accuracy: {accuracy}")
 - return the respective class (intent_name)
 """
 
-def intentPredict(user_input):
+# Take the user input as test data and predict using the model.
+def intentPredict(user_input):  # Do not change the function name
     # Vectorize the user input
     user_input_vectorized = vectorizer.transform([user_input])
 
@@ -488,14 +507,6 @@ def intentPredict(user_input):
 user_input_example = "open my zodiac sign"
 predicted_intent = intentPredict(user_input_example)
 print(f"Predicted Intent: {predicted_intent}")
-
-# Take the user input as test data and predict using the model.
-
-def intentPredict(user_input):  # Do not change the function name
-
-    # YOUR CODE HERE for the prediction
-
-    return predicted_intent
 
 """### Task4 (4Marks):
 
